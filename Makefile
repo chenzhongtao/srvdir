@@ -32,3 +32,6 @@ clean:
 contributors:
 	echo "Contributors to srvdir:\n" > CONTRIBUTORS
 	git log --raw | grep "^Author: " | sort | uniq | cut -d ' ' -f2- | sed 's/^/- /' | cut -d '<' -f1 >> CONTRIBUTORS
+
+# git clone https://github.com/inconshreveable/muxado.git
+# git reset --hard f693c7e88ba316d1a0ae3e205e22a01aa3ec2848
